@@ -1,0 +1,12 @@
+strong{
+    color: rgb(77, 123, 17);
+}
+
+i {
+    color : rgb(12, 57 , 129)
+}
+
+ul {
+    list-style: circle;
+    margin-left: 50px;
+}
