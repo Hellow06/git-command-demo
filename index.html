@@ -1,27 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Document</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="node_modules/impress.js/css/impress-demo.css" rel="stylesheet">
-    </head>
-    <body>
+
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="node_modules/impress.js/css/impress-demo.css" rel="stylesheet">
+</head>
+
+<body>
     <div id="impress">
         <div id="title" class="step slide" data-x="-1000">
             <q>
                 <h3>Git starter commands</h3>
             </q>
         </div>
+
+        <!-- Layer 1 -->
+        <div class="step slide" id="layer-1" data-x="1000">
+            <q>
+                <h1>starter commands</h1>
+            </q>
+            <p>
+                git init <span>Initialise un repository local</span>
+            </p>
+            <p>
+                git config --local user.name <strong>&lt;user name&gt;</strong><span> Initialise un nom d'utilisateur</span>
+            </p>
+            <p>
+                git config --local user.email <strong>&lt;user email&gt;</strong><span> Initialise un email d'utilisateur</span>
+            </p>
+        </div>
     </div>
     <script src="node_modules/impress.js/js/impress.js"></script>
     <script>
         var rootElement = document.querySelector("#impress");
-        rootElement.addEventListener("impress.init", function(){
+        rootElement.addEventListener("impress.init", function () {
             console.log("impress run...");
         })
 
         impress().init();
     </script>
-    </body>
+    <style>
+        #title q h1 {
+            font-size: 1em;
+            text-align: center;
+        }
+    </style>
+</body>
+
 </html>
