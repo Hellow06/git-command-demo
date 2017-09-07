@@ -6,20 +6,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="node_modules/impress.js/css/impress-demo.css" rel="stylesheet">
+    <style>
+        #title q h1 {
+            font-size: 1em;
+            text-align: center;
+        }
+    </style>
+    
 </head>
 
 <body>
     <div id="impress">
         <div id="title" class="step slide" data-x="-1000">
             <q>
-                <h3>Git starter commands</h3>
+                <h1>Git starter commands</h1>
             </q>
         </div>
 
         <!-- Layer 1 -->
         <div class="step slide" id="layer-1" data-x="1000">
             <q>
-                <h1>starter commands</h1>
+                <h1>Starter commands</h1>
             </q>
             <p>
                 git init <span>Initialise un repository local</span>
@@ -31,6 +38,22 @@
                 git config --local user.email <strong>&lt;user email&gt;</strong><span> Initialise un email d'utilisateur</span>
             </p>
         </div>
+
+        <!-- Layer 2 -->
+        <div class="step slide" id="layer-2" data-x="2000">
+                <q>
+                    <h1>Add</h1>
+                </q>
+                <p>
+                    git add <strong>&lt;filename&gt;</strong><span> Ajoute un fichier dans l'index</span>
+                </p>
+                <p>
+                    git add .<span> Ajoute les fichiers du dossier en cours dans l'index</span>
+                </p>
+                <p>
+                    git add -A<span> Ajoute tous les fichiers dans l'index (à ne pas utiliser de préférence)</span>
+                </p>
+            </div>
     </div>
     <script src="node_modules/impress.js/js/impress.js"></script>
     <script>
@@ -41,12 +64,6 @@
 
         impress().init();
     </script>
-    <style>
-        #title q h1 {
-            font-size: 1em;
-            text-align: center;
-        }
-    </style>
 </body>
 
 </html>
