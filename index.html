@@ -12,7 +12,7 @@
             text-align: center;
         }
     </style>
-    
+
 </head>
 
 <body>
@@ -41,19 +41,32 @@
 
         <!-- Layer 2 -->
         <div class="step slide" id="layer-2" data-x="2000">
-                <q>
+            <q>
                     <h1>Add</h1>
                 </q>
-                <p>
-                    git add <strong>&lt;filename&gt;</strong><span> Ajoute un fichier dans l'index</span>
-                </p>
-                <p>
-                    git add .<span> Ajoute les fichiers du dossier en cours dans l'index</span>
-                </p>
-                <p>
-                    git add -A<span> Ajoute tous les fichiers dans l'index (à ne pas utiliser de préférence)</span>
-                </p>
-            </div>
+            <p>
+                git add <strong>&lt;filename&gt;</strong><span> Ajoute un fichier dans l'index</span>
+            </p>
+            <p>
+                git add .<span> Ajoute les fichiers du dossier en cours dans l'index</span>
+            </p>
+            <p>
+                git add -A<span> Ajoute tous les fichiers dans l'index (à ne pas utiliser de préférence)</span>
+            </p>
+        </div>
+
+        <!-- Layer 3 -->
+        <div class="step slide" id="layer-3" data-x="3000">
+            <q>
+                <h1>Commit</h1>
+            </q>
+            <p>
+                git commit -m "<i>your message</i>"<span> Commit des fichiers de la zone staging vers le repository</span>
+            </p>
+            <p>
+                git commit -a<span> Commit les fichiers de la zone staging vers le repository et ouvre l'éditeur par défaut pour éditer le message</span>
+            </p>
+        </div>
     </div>
     <script src="node_modules/impress.js/js/impress.js"></script>
     <script>
