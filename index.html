@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="node_modules/impress.js/css/impress-demo.css" rel="stylesheet">
+    </head>
+    <body>
+    <div id="impress">
+        <div id="title" class="step slide" data-x="-1000">
+            <q>
+                <h3>Git starter commands</h3>
+            </q>
+        </div>
+    </div>
+    <script src="node_modules/impress.js/js/impress.js"></script>
+    <script>
+        var rootElement = document.querySelector("#impress");
+        rootElement.addEventListener("impress.init", function(){
+            console.log("impress run...");
+        })
+
+        impress().init();
+    </script>
+    </body>
+</html>
