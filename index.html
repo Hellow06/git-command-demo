@@ -29,13 +29,16 @@
                 <h1>Starter commands</h1>
             </q>
             <p>
-                git init <span>Initialise un repository local</span>
+                git init 
+                <span>Initialise un repository local</span>
             </p>
             <p>
-                git config --local user.name <strong>&lt;user name&gt;</strong><span> Initialise un nom d'utilisateur</span>
+                git config --local user.name <strong>&lt;user name&gt;</strong>
+                <span> Initialise un nom d'utilisateur</span>
             </p>
             <p>
-                git config --local user.email <strong>&lt;user email&gt;</strong><span> Initialise un email d'utilisateur</span>
+                git config --local user.email <strong>&lt;user email&gt;</strong>
+                <span> Initialise un email d'utilisateur</span>
             </p>
         </div>
 
@@ -43,13 +46,16 @@
         <div class="step slide" id="layer-2" data-x="2000">
             <h1>Add</h1>
             <p>
-                git add <strong>&lt;filename&gt;</strong><span> Ajoute un fichier dans l'index</span>
+                git add <strong>&lt;filename&gt;</strong>
+                <span> Ajoute un fichier dans l'index</span>
             </p>
             <p>
-                git add .<span> Ajoute les fichiers du dossier en cours dans l'index</span>
+                git add .
+                <span> Ajoute les fichiers du dossier en cours dans l'index</span>
             </p>
             <p>
-                git add -A<span> Ajoute tous les fichiers dans l'index (à ne pas utiliser de préférence)</span>
+                git add -A
+                <span> Ajoute tous les fichiers dans l'index (à ne pas utiliser de préférence)</span>
             </p>
         </div>
 
@@ -57,10 +63,12 @@
         <div class="step slide" id="layer-3" data-x="3000">
             <h1>Commit</h1>
             <p>
-                git commit -m "<i>your message</i>"<span> Commit des fichiers de la zone staging vers le repository</span>
+                git commit -m "<i>your message</i>"
+                <span> Commit des fichiers de la zone staging vers le repository</span>
             </p>
             <p>
-                git commit -a<span> Commit les fichiers de la zone staging vers le repository et ouvre l'éditeur par défaut pour éditer le message</span>
+                git commit -a
+                <span> Commit les fichiers de la zone staging vers le repository et ouvre l'éditeur par défaut pour éditer le message</span>
             </p>
         </div>
 
@@ -89,25 +97,32 @@
         <div class="step slide" id="layer-6" data-x="6000">
             <h1>Affichage log</h1>
             <p>
-                git log <span> affiche les commits</span>
+                git log 
+                <span> affiche les commits</span>
             </p>
             <p>
-                git log -1 <span> affiche le dernier commit</span>
+                git log -1 
+                <span> affiche le dernier commit</span>
             </p>
             <p>
-                git log --pretty=oneline --max-count=2 <span> affiche sur une ligne les 2 derniers commits</span>
+                git log --pretty=oneline --max-count=2 
+                <span> affiche sur une ligne les 2 derniers commits</span>
             </p>
             <p>
-                git log --pretty=oneline --since="5 minutes ago" <span> affiche les derniers commits dans les 5 dernieres minutes</span>
+                git log --pretty=oneline --since="5 minutes ago" 
+                <span> affiche les derniers commits dans les 5 dernieres minutes</span>
             </p>
             <p>
-                git log --oneline --until="5 minutes ago" <span> affiche les derniers commits dans les 5 dernieres minutes</span>
+                git log --oneline --until="5 minutes ago" 
+                <span> affiche les derniers commits dans les 5 dernieres minutes</span>
             </p>
             <p>
-                git log --oneline --author="Julian ALBINO" <span> affiche les commits envoyés par Julian ALBINO (case sensitive)</span>
+                git log --oneline --author="Julian ALBINO" 
+                <span> affiche les commits envoyés par Julian ALBINO (case sensitive)</span>
             </p>
             <p>
-                git log --oneline --all --pretty=format:"%h %cd %s (%an)" --since="1 days ago" <span> affiche tous les commits des dernières 24h</span>
+                git log --oneline --all --pretty=format:"%h %cd %s (%an)" --since="1 days ago" 
+                <span> affiche tous les commits des dernières 24h</span>
             </p>
         </div>
 
@@ -131,10 +146,41 @@
         <div class="step slide" id="layer-8" data-x="7000">
             <h1>Version...</h1>
             <p>
-                git tag <span> affichage des release</span>
+                git tag 
+                <span> affichage des release</span>
             </p>
             <p>
-                git tag -a "your message" <span> création d'une release</span>
+                git tag -a <i>vX.X</i> -m "your message" 
+                <span> création d'une release avec numéro de version et message</span>
+            </p>
+        </div>
+
+        <!-- Layer 9 -->
+        <div class="step slide" id="layer-9" data-x="8000">
+            <h1>Branche</h1>
+            <p>
+                git branch <strong>&lt;branchName&gt;</strong>
+                <span> Création d'une branche</span>
+            </p>
+            <p>
+                git checkout <strong>&lt;branchName&gt;</strong>
+                <span> Connexion à une branche</span>
+            </p>
+            <p>
+                git checkout -b <strong>&lt;branchName&gt;</strong>
+                <span> Création et connexion à une branche</span>
+            </p>
+            <p>
+                git branch -d OU -D <strong>&lt;branchName&gt;</strong>
+                <span> Suppression d'une branche, -d : analyse des commits de la branche, -D : force delete</span>
+            </p>
+            <p>
+                git branch
+                <span> Liste des branches</span>
+            </p>
+            <p>
+                git merge <strong>&lt;branchName&gt;</strong>
+                <span> Fusion des branches</span>
             </p>
         </div>
     </div>
